@@ -1,11 +1,8 @@
 import styled from "styled-components";
 import { bp } from "../../styles/globalStyles";
+import { motion } from "framer-motion";
 
-interface IProps {
-	open: boolean;
-}
-
-export const StyledNav = styled.nav`
+export const StyledHeader = styled.header`
 	display: flex;
 
 	@media ${bp.md} {
@@ -24,17 +21,19 @@ export const StyledLogo = styled.div`
 	}
 `;
 
-export const StyledMenu = styled.ul<IProps>`
+export const StyledNav = styled(motion.nav)`
 	background-color: seagreen;
 	height: 100vh;
-	width: 100%;
-	margin: 0;
-	padding-top: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+`;
+
+export const StyledMenu = styled(motion.ul)`
+	margin: 5rem 0 0 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	transition: all 0.3s ease-in-out;
-	transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
 
 	@media ${bp.md} {
 		flex: 80%;
@@ -42,10 +41,10 @@ export const StyledMenu = styled.ul<IProps>`
 		align-items: center;
 		justify-content: end;
 	}
+`;
 
-	& li {
-		padding: 1rem 1rem;
-	}
+export const StyledLi = styled(motion.li)`
+	padding: 1rem 1rem;
 
 	& a {
 		color: ${({ theme }) => theme.palette.secondary};

@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledBurger } from "./BurgerStyle";
 
 interface IProps {
@@ -6,9 +5,9 @@ interface IProps {
 	handleOpen: () => void;
 }
 
-const Burger = ({ open, handleOpen }: IProps) => {
+const Burger = ({ handleOpen, open }: IProps) => {
 	return (
-		<StyledBurger onClick={handleOpen}>
+		<StyledBurger onClick={handleOpen} open={open}>
 			<div />
 			<div />
 			<div />
