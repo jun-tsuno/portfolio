@@ -4,29 +4,34 @@ import { motion } from "framer-motion";
 
 export const StyledHeader = styled.header`
 	display: flex;
+	align-items: center;
+	padding: 1.3rem;
+	justify-content: space-between;
 
 	@media ${bp.md} {
-		display: flex;
-		align-items: center;
 		padding-top: 1rem;
 	}
 `;
 
 export const StyledLogo = styled.div`
 	z-index: 10;
+	color: orange;
 
 	@media ${bp.md} {
 		flex: 20%;
-		padding-left: 1rem;
 	}
 `;
 
 export const StyledNav = styled(motion.nav)`
-	background-color: seagreen;
+	background-color: ${({ theme }) => theme.palette.primary};
 	height: 100vh;
 	position: absolute;
 	top: 0;
 	right: 0;
+
+	@media ${bp.md} {
+		display: fixed;
+	}
 `;
 
 export const StyledMenu = styled(motion.ul)`
@@ -53,5 +58,5 @@ export const StyledLi = styled(motion.li)`
 
 export const StyledNavBtn = styled.div`
 	padding-top: 1.5rem;
-	width: 8rem;
+	width: 6rem;
 `;

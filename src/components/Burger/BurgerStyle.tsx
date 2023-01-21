@@ -5,24 +5,21 @@ interface IProps {
 }
 
 export const StyledBurger = styled.div<IProps>`
-	position: absolute;
-	top: 5%;
-	right: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	width: 2rem;
-	height: 2rem;
-	background: transparent;
-	border: none;
+	width: 1.3rem;
+	height: 1.3rem;
+	background: ${({ theme }) => theme.palette.primary};
+	border-radius: 50%;
 	cursor: pointer;
-	padding: 0;
+	padding: 0.7rem;
 	z-index: 10;
 
 	div {
-		width: 2rem;
-		height: 0.25rem;
-		background: black;
+		width: 1.3rem;
+		height: 0.2rem;
+		background: ${({ theme }) => theme.palette.secondary};
 		border-radius: 0.5rem;
 		transition: all 0.3s liner;
 		position: relative;

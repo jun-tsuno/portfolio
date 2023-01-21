@@ -8,8 +8,10 @@ import {
 	StyledLogo,
 } from "./HeaderStyle";
 import Burger from "../Burger/Burger";
-import Button from "../Button/Button";
+import { SecondaryButton } from "../Button/ButtonStyle";
 import { motion, AnimatePresence } from "framer-motion";
+import useMediaQuery from "../../hooks/useMediaQuery";
+import { bp } from "../../styles/globalStyles";
 
 const links = [
 	{ name: "ABOUT", to: "#", id: 1 },
@@ -42,6 +44,7 @@ const listVariants = {
 
 const Navigation = () => {
 	const [open, setOpen] = useState(false);
+	const isMedium = useMediaQuery(`${bp.md}`);
 
 	return (
 		<StyledHeader>
@@ -69,7 +72,7 @@ const Navigation = () => {
 									<StyledLi
 										as={motion.li}
 										key={id}
-										whileHover={{ scale: 1.5 }}
+										whileHover={{ scale: 1.3 }}
 										variants={listVariants}
 									>
 										<a href={to}>{name}</a>
@@ -78,11 +81,11 @@ const Navigation = () => {
 							})}
 							<StyledLi
 								as={motion.li}
-								whileHover={{ scale: 1.5 }}
+								whileHover={{ scale: 1.3 }}
 								variants={listVariants}
 							>
 								<StyledNavBtn>
-									<Button>RESUME</Button>
+									<SecondaryButton>RESUME</SecondaryButton>
 								</StyledNavBtn>
 							</StyledLi>
 						</StyledMenu>
