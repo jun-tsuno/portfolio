@@ -12,3 +12,9 @@ declare module "styled-components" {
 		};
 	}
 }
+
+export interface Link {
+	name: string;
+	to: string;
+	id: number;
+}

@@ -14,6 +14,7 @@ export const StyledBurger = styled.div<IProps>`
 	border-radius: 50%;
 	cursor: pointer;
 	padding: 0.7rem;
+	margin-left: auto;
 	z-index: 10;
 
 	div {
@@ -25,6 +26,7 @@ export const StyledBurger = styled.div<IProps>`
 		position: relative;
 		transform-origin: 1px;
 		transition: all 0.3s linear;
+		z-index: 10;
 
 		:first-child {
 			transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
