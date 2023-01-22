@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const bp = {
 	sm: "(min-width: 640px)",
@@ -59,5 +61,14 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
+
+        :hover {
+            cursor: pointer;
+        }
     }
+`;
+
+export const BaseLink = styled(motion.a)`
+	text-decoration: none;
+	color: ${({ theme }) => theme.palette.primary};
 `;

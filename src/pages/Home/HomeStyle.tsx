@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { bp } from "../../styles/globalStyles";
 
+export const StyledHeader = styled.div`
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100vw;
+`;
+
 export const StyledHero = styled.div`
 	width: 90%;
 	margin: 5rem auto;
@@ -48,4 +55,26 @@ export const StyledText = styled.h1`
 	@media ${bp.md} {
 		font-size: 2rem;
 	}
+`;
+
+export const StyledTransition = styled.div`
+	padding: 1.5rem 0;
+
+	h1 {
+		margin: 1rem 0;
+	}
+
+	span {
+		padding: 0 1rem;
+	}
+
+	@media ${bp.sm} {
+		display: flex;
+		align-items: center;
+	}
+`;
+
+export const StyledSwapContainer = styled.h1`
+	font-size: 1.3rem;
+	margin: 0;
 `;

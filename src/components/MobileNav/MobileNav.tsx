@@ -3,10 +3,11 @@ import Burger from "../Burger/Burger";
 import { BaseButton } from "../Button/ButtonStyle";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-	StyledLi,
+	StyledContainer,
 	StyledMenu,
 	StyledNav,
 	StyledNavBtn,
+	StyledLink,
 } from "./MobileNavStyle";
 import { Link } from "../../types/types";
 
@@ -60,17 +61,25 @@ const MobileNav = ({ links }: IProps) => {
 						>
 							{links.map(({ name, to, id }) => {
 								return (
-									<StyledLi
-										as={motion.li}
+									<StyledContainer
+										as={motion.div}
 										key={id}
-										whileHover={{ scale: 1.3 }}
 										variants={listVariants}
+										whileHover={{ scale: 1.2 }}
+										whileTap={{ scale: 0.9 }}
+										transition={{
+											type: "spring",
+											stiffness: 400,
+											damping: 17,
+										}}
 									>
-										<a href={to}>{name}</a>
-									</StyledLi>
+										<StyledLink href={to} as={motion.a}>
+											{name}
+										</StyledLink>
+									</StyledContainer>
 								);
 							})}
-							<StyledLi
+							<StyledContainer
 								as={motion.li}
 								whileHover={{ scale: 1.3 }}
 								variants={listVariants}
@@ -78,7 +87,7 @@ const MobileNav = ({ links }: IProps) => {
 								<StyledNavBtn>
 									<BaseButton>RESUME</BaseButton>
 								</StyledNavBtn>
-							</StyledLi>
+							</StyledContainer>
 						</StyledMenu>
 					</StyledNav>
 				)}

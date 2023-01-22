@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { bp } from "../../styles/globalStyles";
+import { bp, BaseLink } from "../../styles/globalStyles";
 
 export const StyledNav = styled(motion.nav)`
 	background-color: ${({ theme }) => theme.palette.primary};
@@ -27,15 +27,15 @@ export const StyledMenu = styled(motion.ul)`
 	}
 `;
 
-export const StyledLi = styled(motion.li)`
+export const StyledContainer = styled(motion.div)`
 	padding: 1rem 1rem;
-
-	& a {
-		color: ${({ theme }) => theme.palette.secondary};
-	}
 `;
 
 export const StyledNavBtn = styled.div`
 	padding-top: 1.5rem;
 	width: 6rem;
+`;
+
+export const StyledLink = styled(BaseLink)`
+	color: ${({ theme }) => theme.palette.secondary};
 `;

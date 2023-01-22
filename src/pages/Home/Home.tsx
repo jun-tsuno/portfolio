@@ -1,16 +1,22 @@
 import { useState } from "react";
 import Header from "../../components/Header/Header";
-import { StyledHero, StyledName, StyledText } from "./HomeStyle";
-import TextTransition, { presets } from "react-text-transition";
-
-const text = ["WORLD TRAVELER", "MOVIE FAN", "HARD WORKER"];
+import {
+	StyledHeader,
+	StyledHero,
+	StyledName,
+	StyledText,
+	StyledTransition,
+	StyledSwapContainer,
+} from "./HomeStyle";
+import TextSwap from "../../components/TextSwap/TextSwap";
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
 
 const Home = () => {
 	return (
 		<div>
-			<div>
+			<StyledHeader>
 				<Header />
-			</div>
+			</StyledHeader>
 			<StyledHero>
 				<StyledName>
 					<span>Hi, I'm</span> <br />
@@ -21,12 +27,14 @@ const Home = () => {
 					<br />
 					Based in Vancouver
 				</StyledText>
-				<div>
+				<StyledTransition>
 					<h1>
-						🙋‍♂️ <span>=</span>
+						🙋‍♂️<span>=</span>
 					</h1>
-				</div>
+					<StyledSwapContainer>{/* <TextSwap /> */}</StyledSwapContainer>
+				</StyledTransition>
 			</StyledHero>
+			<SocialMedia />
 		</div>
 	);
 };

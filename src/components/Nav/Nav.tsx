@@ -13,8 +13,15 @@ const Nav = ({ links }: IProps) => {
 		<StyledMenu>
 			{links.map(({ name, to, id }) => {
 				return (
-					<StyledLink as={motion.li} key={id} whileHover={{ scale: 1.3 }}>
-						<a href={to}>{name}</a>
+					<StyledLink
+						href={to}
+						key={id}
+						as={motion.a}
+						whileHover={{ scale: 1.2 }}
+						whileTap={{ scale: 0.9 }}
+						transition={{ type: "spring", stiffness: 400, damping: 17 }}
+					>
+						{name}
 					</StyledLink>
 				);
 			})}

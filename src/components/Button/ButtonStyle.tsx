@@ -9,7 +9,6 @@ export const BaseButton = styled.button`
 	font-size: 1rem;
 	border-radius: 0.2rem;
 	text-align: center;
-
 	cursor: pointer;
 `;
 

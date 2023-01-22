@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { BaseLink } from "../../styles/globalStyles";
 
 export const StyledMenu = styled.ul`
 	display: flex;
@@ -7,7 +8,7 @@ export const StyledMenu = styled.ul`
 	align-items: center;
 `;
 
-export const StyledLink = styled(motion.li)`
+export const StyledLink = styled(BaseLink)`
 	padding: 0 0.8rem;
 
 	a {
