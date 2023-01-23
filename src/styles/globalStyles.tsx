@@ -12,11 +12,12 @@ export const bp = {
 export const lightTheme = {
 	palette: {
 		bgPrimary: "#fff",
-		bgSecondary: "#ecebeb",
+		bgSecondary: "#efeeee",
 		primary: "#0c2d49",
 		secondary: "#fff",
 		accent: "#f75c24",
-		marker: "rgba(247, 92, 36, 0.6)",
+		marker: "rgba(244, 108, 59, 0.686)",
+		strong: "#00ad7c",
 	},
 };
 
@@ -32,6 +33,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         background: ${({ theme }) => theme.palette.bgPrimary};
         color: ${({ theme }) => theme.palette.primary};
+        font-size: 1.1rem;
     }
 
     h1 {
@@ -51,7 +53,29 @@ export const GlobalStyle = createGlobalStyle`
     h2 {
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
-        font-size: 2.5rem;
+        font-size: 1.4rem;
+
+        @media ${bp.sm} {
+		font-size: 1.5rem;
+	}
+
+        @media ${bp.md} {
+		font-size: 2rem;
+	}
+    }
+
+    h3 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        font-size: 1.3rem;
+        background: linear-gradient(transparent 30%, ${({ theme }) =>
+					theme.palette.marker} 50%);
+        display: inline-block;
+    }
+
+    p {
+        line-height: 1.5;
+        margin: 0;
     }
 
     ul {

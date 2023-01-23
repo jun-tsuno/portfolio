@@ -24,7 +24,7 @@ const sideVariants = {
 	},
 	open: {
 		transition: {
-			staggerChildren: 0.25,
+			staggerChildren: 0.15,
 			staggerDirection: 1,
 		},
 	},
@@ -47,8 +47,8 @@ const MobileNav = ({ links }: IProps) => {
 					<StyledNav
 						initial={{ width: 0 }}
 						animate={{
-							width: "100%",
-							transition: { delay: 0.2, duration: 0.3 },
+							width: "50%",
+							transition: { duration: 0.4 },
 						}}
 						exit={{ width: 0, transition: { delay: 0.5, duration: 0.4 } }}
 					>

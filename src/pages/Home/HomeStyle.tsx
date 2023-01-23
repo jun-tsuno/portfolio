@@ -6,6 +6,7 @@ export const StyledHeader = styled.div`
 	top: 0;
 	right: 0;
 	width: 100vw;
+	z-index: 100;
 `;
 
 export const StyledHero = styled.div`
@@ -40,20 +41,11 @@ export const StyledName = styled.h1`
 	}
 `;
 
-export const StyledText = styled.h1`
-	font-size: 1.4rem;
+export const StyledText = styled.h2`
 	margin: 0;
 
 	span {
 		color: ${({ theme }) => theme.palette.accent};
-	}
-
-	@media ${bp.sm} {
-		font-size: 1.5rem;
-	}
-
-	@media ${bp.md} {
-		font-size: 2rem;
 	}
 `;
 
@@ -74,7 +66,6 @@ export const StyledTransition = styled.div`
 	}
 `;
 
-export const StyledSwapContainer = styled.h1`
-	font-size: 1.3rem;
+export const StyledSwapContainer = styled.h2`
 	margin: 0;
 `;

@@ -11,13 +11,13 @@ export const StyledContainer = styled.div`
 		align-items: center;
 		position: fixed;
 		top: 50%;
-		right: 4%;
+		right: 1.3%;
 		transform: translateY(-50%);
 
 		::before,
 		::after {
 			content: "";
-			width: 2px;
+			width: 1.5px;
 			height: 3rem;
 			margin: 0.2rem 0;
 			background: ${({ theme }) => theme.palette.primary};
@@ -26,6 +26,6 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledLink = styled(BaseLink)`
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	padding: 0.1rem;
 `;

@@ -8,9 +8,6 @@ export const StyledNav = styled(motion.nav)`
 	position: absolute;
 	top: 0;
 	right: 0;
-
-	@media ${bp.md} {
-	}
 `;
 
 export const StyledMenu = styled(motion.ul)`

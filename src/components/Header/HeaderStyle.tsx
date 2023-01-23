@@ -21,7 +21,7 @@ export const RightSection = styled.div`
 `;
 
 export const StyledLogo = styled.div`
-	z-index: 10;
+	z-index: 100;
 	color: orange;
 
 	@media ${bp.md} {
