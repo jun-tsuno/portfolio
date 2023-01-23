@@ -11,7 +11,9 @@ export const StyledHeader = styled.div`
 
 export const StyledHero = styled.div`
 	width: 90%;
-	margin: 5rem auto;
+	margin: 0 auto;
+	padding: 7rem 0;
+
 	text-align: center;
 
 	@media ${bp.sm} {
@@ -31,12 +33,12 @@ export const StyledName = styled.h1`
 		}
 
 		@media ${bp.md} {
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 	}
 
 	@media ${bp.md} {
-		line-height: 4.3rem;
+		line-height: rem;
 		margin: 1.5rem 0;
 	}
 `;

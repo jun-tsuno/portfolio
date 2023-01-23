@@ -4,6 +4,7 @@ import { bp } from "../../styles/globalStyles";
 
 export const StyledContainer = styled.div`
 	display: none;
+	z-index: 100;
 
 	@media ${bp.lg} {
 		display: inline-flex;

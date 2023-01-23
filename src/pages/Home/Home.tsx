@@ -31,7 +31,9 @@ const Home = () => {
 					<h1>
 						🙋‍♂️<span>=</span>
 					</h1>
-					<StyledSwapContainer>{/* <TextSwap /> */}</StyledSwapContainer>
+					<StyledSwapContainer>
+						<TextSwap />
+					</StyledSwapContainer>
 				</StyledTransition>
 			</StyledHero>
 			<SocialMedia />
