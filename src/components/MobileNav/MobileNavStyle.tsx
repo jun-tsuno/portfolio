@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { bp, BaseLink } from "../../styles/globalStyles";
 
 export const StyledNav = styled(motion.nav)`
-	background-color: ${({ theme }) => theme.palette.primary};
+	background-color: ${({ theme }) => theme.palette.bgMenu};
 	height: 100vh;
 	position: absolute;
 	top: 0;
@@ -34,5 +34,5 @@ export const StyledNavBtn = styled.div`
 `;
 
 export const StyledLink = styled(BaseLink)`
-	color: ${({ theme }) => theme.palette.secondary};
+	color: ${({ theme }) => theme.palette.textSecondary};
 `;

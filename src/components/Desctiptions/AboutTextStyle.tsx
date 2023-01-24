@@ -5,6 +5,6 @@ export const StyledTextBox = styled.div`
 	padding: 2rem 0;
 
 	strong {
-		color: ${({ theme }) => theme.palette.strong};
+		color: ${({ theme }) => theme.palette.textPrimary};
 	}
 `;

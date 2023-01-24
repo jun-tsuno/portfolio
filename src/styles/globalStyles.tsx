@@ -13,13 +13,28 @@ export const lightTheme = {
 	palette: {
 		bgPrimary: "#fff",
 		bgSecondary: "#f1f1f1",
-		primary: "#0c2d49",
-		secondary: "#fff",
+		bgMenu: "#0b2942",
+		textPrimary: "#24425b",
+		textSecondary: "#fff",
+		paragraph: "#3d576d",
 		accent: "#f75c24",
 		marker: "rgba(244, 108, 59, 0.686)",
-		strong: "#08a387",
+		strong: "#caebf2",
 	},
 };
+
+// export const lightTheme = {
+// 	palette: {
+// 		bgPrimary: "#091322",
+// 		bgSecondary: "#282828",
+// 		bgMenu: "#0c2d49",
+// 		textPrimary: "#d5d5d5",
+// 		textSecondary: "#fff",
+// 		paragraph: "#beafa4",
+// 		accent: "#F97D50",
+// 		strong: "#4c9fb2",
+// 	},
+// };
 
 export const GlobalStyle = createGlobalStyle`
     html {
@@ -33,7 +48,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         background: ${({ theme }) => theme.palette.bgPrimary};
-        color: ${({ theme }) => theme.palette.primary};
+        color: ${({ theme }) => theme.palette.textPrimary};
         scrollbar-gutter: stable both-edges;
 
 
@@ -77,7 +92,7 @@ export const GlobalStyle = createGlobalStyle`
         margin-bottom: 3rem;
 
 
-        &::before {
+        /* &::before {
             content: "";
             position: absolute;
             bottom: -7px;
@@ -85,7 +100,7 @@ export const GlobalStyle = createGlobalStyle`
             height: 6px;
             background-color: ${({ theme }) => theme.palette.accent};
             display: block;
-        }
+        } */
     }
 
     h4 {
@@ -93,11 +108,13 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
         margin-top: 0;
         margin-bottom: 1rem;
+        padding: 0.3rem;
     }
 
     p {
         line-height: 1.3;
         margin: 0;
+        color: ${({ theme }) => theme.palette.paragraph};
     }
 
     ul {
@@ -116,5 +133,5 @@ export const GlobalStyle = createGlobalStyle`
 
 export const BaseLink = styled(motion.a)`
 	text-decoration: none;
-	color: ${({ theme }) => theme.palette.primary};
+	color: ${({ theme }) => theme.palette.textPrimary};
 `;

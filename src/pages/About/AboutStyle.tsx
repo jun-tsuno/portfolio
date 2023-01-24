@@ -7,7 +7,7 @@ export const StyledSection = styled.section`
 
 	::before {
 		content: "";
-		height: 3rem;
+		height: 4rem;
 		background-color: ${({ theme }) => theme.palette.bgSecondary};
 		position: absolute;
 		top: 0;
@@ -18,10 +18,30 @@ export const StyledSection = styled.section`
 		clip-path: polygon(
 			100% 100%,
 			0% 100%,
-			0% 10.5%,
-			33.33% 54.42%,
-			66.67% 0.96%,
-			100% 61.63%
+			0% 44.14%,
+			25% 87.59%,
+			50% 44.14%,
+			75% 0.69%,
+			100% 44.14%
+		);
+	}
+
+	::after {
+		content: "";
+		height: 4rem;
+		background-color: ${({ theme }) => theme.palette.bgSecondary};
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		display: block;
+		clip-path: polygon(
+			100% 0%,
+			0% 0%,
+			0% 73.51%,
+			33.33% 6.4%,
+			66.67% 87.54%,
+			100% 46.06%
 		);
 	}
 `;
@@ -31,7 +51,17 @@ export const StyledContents = styled.div`
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	max-width: 50rem;
+	max-width: 60rem;
+`;
+
+export const StyledSectionTitle = styled.h3`
+	span {
+		background-color: ${({ theme }) => theme.palette.accent};
+		border-radius: 50%;
+		padding: 0.35rem;
+		margin-right: 0.6rem;
+		color: ${({ theme }) => theme.palette.textSecondary};
+	}
 `;
 
 export const StyledTextField = styled.div`
@@ -44,7 +74,7 @@ export const StyledTextField = styled.div`
 `;
 
 export const StyledImage = styled.div`
-	width: 14rem;
+	width: 15rem;
 	z-index: 0;
 	position: relative;
 	align-self: center;
@@ -55,55 +85,38 @@ export const StyledImage = styled.div`
 		margin-top: 2rem;
 	}
 
+	@media ${bp.lg} {
+		width: 24rem;
+	}
+
 	img {
 		object-fit: cover;
 		margin: 0 auto;
 		max-width: 100%;
 		height: 100%;
 		display: inline;
-		border: 0.6rem solid white;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+		border-radius: 50%;
+		border: 0.5rem solid lightgray;
 	}
 
-	::after {
+	/* ::after {
 		content: "";
 		width: 14rem;
 		height: 14rem;
-		background: #bfbfbf;
+		border: 2px solid ${({ theme }) => theme.palette.textPrimary};
+		border-radius: 5px;
+		background-color: ${({ theme }) => theme.palette.textPrimary};
 		z-index: -1;
-		border: 0.6rem solid white;
 		position: absolute;
-		top: 0;
-		left: -0.7rem;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-		transform: rotate(-4deg);
+		top: 1rem;
+		right: -1rem;
 		backface-visibility: hidden;
 
 		@media ${bp.md} {
 			width: 12rem;
 			height: 12rem;
 		}
-	}
-
-	::before {
-		content: "";
-		width: 14rem;
-		height: 14rem;
-		background: #7e8176;
-		z-index: -1;
-		border: 0.6rem solid white;
-		position: absolute;
-		top: 7px;
-		left: 0.3rem;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-		transform: rotate(4deg);
-		backface-visibility: hidden;
-
-		@media ${bp.md} {
-			width: 12rem;
-			height: 12rem;
-		}
-	}
+	} */
 `;
 
 export const StyledTextWrapper = styled.div`
@@ -111,8 +124,8 @@ export const StyledTextWrapper = styled.div`
 	margin: 0 auto;
 
 	@media ${bp.md} {
-		padding-left: 5rem;
-		padding-right: 1rem;
+		padding-left: 2.3rem;
+		padding-right: 2rem;
 	}
 `;
 

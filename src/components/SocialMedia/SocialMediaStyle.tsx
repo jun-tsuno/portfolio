@@ -21,7 +21,7 @@ export const StyledContainer = styled.div`
 			width: 1.5px;
 			height: 3rem;
 			margin: 0.2rem 0;
-			background: ${({ theme }) => theme.palette.primary};
+			background: ${({ theme }) => theme.palette.textPrimary};
 		}
 	}
 `;

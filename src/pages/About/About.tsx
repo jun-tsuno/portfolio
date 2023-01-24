@@ -3,6 +3,7 @@ import AboutInfo from "../../components/Desctiptions/AboutInfo";
 import AboutText from "../../components/Desctiptions/AboutText";
 import {
 	StyledSection,
+	StyledSectionTitle,
 	StyledImage,
 	StyledTextWrapper,
 	StyledInfoWrapper,
@@ -14,9 +15,9 @@ const About = () => {
 	return (
 		<StyledSection>
 			<StyledContents>
-				<div>
-					<h3>ABOUT ME</h3>
-				</div>
+				<StyledSectionTitle>
+					<span>01.</span>ABOUT ME
+				</StyledSectionTitle>
 				<StyledTextField>
 					<StyledImage>
 						<img src="/img/profile.png" alt="profile" />

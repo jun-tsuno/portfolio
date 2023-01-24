@@ -5,10 +5,12 @@ declare module "styled-components" {
 		palette: {
 			bgPrimary: string;
 			bgSecondary: string;
-			primary: string;
-			secondary: string;
+			bgMenu: string;
+			textPrimary: string;
+			textSecondary: string;
+			paragraph: string;
 			accent: string;
-			marker: string;
+			strong: string;
 		};
 	}
 }

@@ -11,10 +11,6 @@ export const StyledMenu = styled.ul`
 
 export const StyledLink = styled(BaseLink)`
 	padding: 0 0.8rem;
-
-	a {
-		color: ${({ theme }) => theme.palette.primary};
-	}
 `;
 
 export const StyledBtn = styled(motion.div)`
