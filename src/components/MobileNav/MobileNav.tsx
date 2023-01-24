@@ -10,10 +10,23 @@ import {
 	StyledLink,
 } from "./MobileNavStyle";
 import { Link } from "../../types/types";
+import { useMediaQuery } from "react-responsive";
+import { bp } from "../../styles/globalStyles";
 
 interface IProps {
 	links: Link[];
 }
+
+const navAnimation = {
+	narrow: {
+		width: "50%",
+		transition: { duration: 0.4 },
+	},
+	wide: {
+		width: "100%",
+		transition: { duration: 0.4 },
+	},
+};
 
 const sideVariants = {
 	close: {
@@ -39,6 +52,8 @@ const listVariants = {
 
 const MobileNav = ({ links }: IProps) => {
 	const [open, setOpen] = useState(false);
+	const isSmall: boolean = useMediaQuery({ query: `${bp.sm}` });
+
 	return (
 		<>
 			<Burger handleOpen={() => setOpen(!open)} open={open} />
@@ -46,10 +61,7 @@ const MobileNav = ({ links }: IProps) => {
 				{open && (
 					<StyledNav
 						initial={{ width: 0 }}
-						animate={{
-							width: "50%",
-							transition: { duration: 0.4 },
-						}}
+						animate={isSmall ? navAnimation.narrow : navAnimation.wide}
 						exit={{ width: 0, transition: { delay: 0.5, duration: 0.4 } }}
 					>
 						<StyledMenu

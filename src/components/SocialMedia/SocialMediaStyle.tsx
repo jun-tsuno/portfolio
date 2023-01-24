@@ -12,7 +12,7 @@ export const StyledContainer = styled.div`
 		align-items: center;
 		position: fixed;
 		top: 50%;
-		right: 1.3%;
+		right: 5%;
 		transform: translateY(-50%);
 
 		::before,

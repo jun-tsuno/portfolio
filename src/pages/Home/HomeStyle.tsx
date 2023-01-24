@@ -1,5 +1,11 @@
 import styled from "styled-components";
 import { bp } from "../../styles/globalStyles";
+import { motion } from "framer-motion";
+
+export const StyledHome = styled.div`
+	height: 100vh;
+	position: relative;
+`;
 
 export const StyledHeader = styled.div`
 	position: fixed;
@@ -9,19 +15,24 @@ export const StyledHeader = styled.div`
 	z-index: 100;
 `;
 
-export const StyledHero = styled.div`
+export const StyledHero = styled(motion.div)`
 	width: 90%;
-	margin: 0 auto;
-	padding: 7rem 0;
-
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
 	text-align: center;
 
 	@media ${bp.sm} {
 		text-align: start;
 	}
+
+	@media ${bp.lg} {
+		transform: translate(55%, -50%);
+	}
 `;
 
-export const StyledName = styled.h1`
+export const StyledName = styled(motion.h1)`
 	line-height: 2.5rem;
 	margin: 1rem 0;
 	span {
@@ -43,7 +54,7 @@ export const StyledName = styled.h1`
 	}
 `;
 
-export const StyledText = styled.h2`
+export const StyledText = styled(motion.h2)`
 	margin: 0;
 
 	span {
@@ -51,7 +62,7 @@ export const StyledText = styled.h2`
 	}
 `;
 
-export const StyledTransition = styled.div`
+export const StyledTransition = styled(motion.div)`
 	padding: 1.5rem 0;
 
 	h1 {

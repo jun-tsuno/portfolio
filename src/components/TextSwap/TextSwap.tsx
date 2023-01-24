@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import TextTransition, { presets } from "react-text-transition";
 
-const text = ["<WORLD TRAVELER/>", "<MOVIE FAN/>", "<HARD WORKER/>"];
+const text = [
+	"<OPEN TO NEW/>",
+	"<WORLD TRAVELER/>",
+	"<HARD WORKER/>",
+	"<MOVIE FAN/>",
+];
 
 const TextSwap = () => {
 	const [index, setIndex] = useState(0);

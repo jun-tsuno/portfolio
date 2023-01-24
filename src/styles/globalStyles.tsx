@@ -24,7 +24,8 @@ export const lightTheme = {
 export const GlobalStyle = createGlobalStyle`
     html {
         font-family: 'League Spartan', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        overflow-y: overlay;
     }
 
     body {
@@ -33,6 +34,8 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         background: ${({ theme }) => theme.palette.bgPrimary};
         color: ${({ theme }) => theme.palette.primary};
+        scrollbar-gutter: stable both-edges;
+
 
     }
 

@@ -6,6 +6,7 @@ export const StyledMenu = styled.ul`
 	display: flex;
 	justify-content: end;
 	align-items: center;
+	margin: 0;
 `;
 
 export const StyledLink = styled(BaseLink)`

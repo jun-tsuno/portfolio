@@ -4,11 +4,12 @@ import { bp } from "../../styles/globalStyles";
 export const StyledHeader = styled.header`
 	display: flex;
 	align-items: center;
-	padding: 1rem;
+	padding: 0 2rem;
+	margin: 0.5rem 0;
 	justify-content: space-between;
 
 	@media ${bp.md} {
-		padding-top: 1rem;
+		padding-top: 1.2rem;
 	}
 `;
 

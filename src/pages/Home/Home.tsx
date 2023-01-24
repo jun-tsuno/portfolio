@@ -7,27 +7,50 @@ import {
 	StyledText,
 	StyledTransition,
 	StyledSwapContainer,
+	StyledHome,
 } from "./HomeStyle";
 import TextSwap from "../../components/TextSwap/TextSwap";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
+import { motion } from "framer-motion";
+
+const container = {
+	hidden: { opacity: 0 },
+	show: {
+		opacity: 1,
+		transition: {
+			delayChildren: 0.5,
+			staggerChildren: 0.2,
+		},
+	},
+};
+
+const item = {
+	hidden: { opacity: 0, y: 50 },
+	show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
 
 const Home = () => {
 	return (
-		<div>
+		<StyledHome>
 			<StyledHeader>
 				<Header />
 			</StyledHeader>
-			<StyledHero>
-				<StyledName>
+			<StyledHero
+				as={motion.div}
+				variants={container}
+				initial="hidden"
+				animate="show"
+			>
+				<StyledName as={motion.h1} variants={item}>
 					<span>Hi, I'm</span> <br />
 					Jun Tsunokawa
 				</StyledName>
-				<StyledText>
+				<StyledText as={motion.h2} variants={item}>
 					A <span>Front-End Developer </span>
 					<br />
 					Based in Vancouver
 				</StyledText>
-				<StyledTransition>
+				<StyledTransition as={motion.div} variants={item}>
 					<h1>
 						🙋‍♂️<span>=</span>
 					</h1>
@@ -37,7 +60,7 @@ const Home = () => {
 				</StyledTransition>
 			</StyledHero>
 			<SocialMedia />
-		</div>
+		</StyledHome>
 	);
 };
 
