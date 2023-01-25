@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import ContentsWrapper, {
-	StyledContentsWrapper,
-} from "../../components/ContentsWrapper/ContentsWrapper";
+import { StyledContentsWrapper } from "../../components/ContentsWrapper/ContentsWrapper";
 import { bp } from "../../styles/globalStyles";
 import { motion } from "framer-motion";
 
@@ -65,15 +63,28 @@ export const StyledSectionTitle = styled.h3`
 		margin-right: 0.6rem;
 		color: ${({ theme }) => theme.palette.textSecondary};
 	}
+	justify-content: flex-start;
 `;
 
 export const StyledTextField = styled.div`
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
+	align-items: center;
 
 	@media ${bp.md} {
 		flex-direction: row;
+		justify-content: center;
 	}
+`;
+
+export const StyledTextWrapper = styled.div`
+	width: 90%;
+	max-width: 30rem;
+	margin: 0;
+`;
+
+export const StyledInfoWrapper = styled.div`
+	width: 100%;
 `;
 
 export const StyledImage = styled.div`
@@ -88,7 +99,8 @@ export const StyledImage = styled.div`
 	}
 
 	@media ${bp.lg} {
-		max-width: 18rem;
+		min-width: 19rem;
+		padding-left: 1rem;
 	}
 
 	img {
@@ -99,19 +111,6 @@ export const StyledImage = styled.div`
 		height: 100%;
 		border-radius: 50%;
 		border: 0.5rem solid lightgray;
+		box-sizing: border-box;
 	}
-`;
-
-export const StyledTextWrapper = styled.div`
-	width: 90%;
-	max-width: 45rem;
-	margin: 0 auto;
-
-	@media ${bp.md} {
-		padding-left: 2.3rem;
-	}
-`;
-
-export const StyledInfoWrapper = styled.div`
-	width: 100%;
 `;

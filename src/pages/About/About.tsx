@@ -39,13 +39,13 @@ const About = () => {
 					<span>01.</span>ABOUT ME
 				</StyledSectionTitle>
 				<StyledTextField>
-					<StyledImage>
-						<img src="/img/profile.png" alt="profile" />
-					</StyledImage>
 					<StyledTextWrapper>
 						<AboutText />
 						<AboutInfo />
 					</StyledTextWrapper>
+					<StyledImage>
+						<img src="/img/profile.png" alt="profile" />
+					</StyledImage>
 				</StyledTextField>
 			</StyledAboutWrapper>
 		</StyledSection>

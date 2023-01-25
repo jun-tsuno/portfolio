@@ -83,22 +83,19 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto Slab', serif;
         font-weight: 900;
         font-size: 1.3rem;
-        display: inline-block;
-        position: relative;
-        padding-left: 1rem;
         margin-top: 0;
         margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-
-        /* &::before {
+        ::after {
             content: "";
-            position: absolute;
-            bottom: -7px;
-            width: 30%;
-            height: 6px;
-            background-color: ${({ theme }) => theme.palette.accent};
-            display: block;
-        } */
+            border-top: 2px solid #979797;
+            width: 3rem;
+            margin-left: 1rem;
+        }
+
     }
 
     h4 {

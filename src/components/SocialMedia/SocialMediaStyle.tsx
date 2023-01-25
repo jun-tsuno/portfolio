@@ -15,6 +15,7 @@ export const StyledContainer = styled(motion.div)`
 		top: 50%;
 		right: 5%;
 		transform: translateY(-50%);
+		padding-left: 1rem;
 
 		::before,
 		::after {

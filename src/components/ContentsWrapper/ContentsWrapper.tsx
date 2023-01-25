@@ -13,9 +13,7 @@ export const StyledContentsWrapper = styled(motion.div)`
 	padding-bottom: 2rem;
 
 	@media ${bp.lg} {
-		width: 85%;
 		max-width: 70rem;
-		padding-right: 4rem;
 	}
 `;
 
