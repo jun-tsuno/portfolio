@@ -2,54 +2,13 @@ import styled from "styled-components";
 import StyledContentsWrapper from "../../components/ContentsWrapper/ContentsWrapper";
 import { bp } from "../../styles/globalStyles";
 import { motion } from "framer-motion";
+import ContentsWrapper from "../../components/ContentsWrapper/ContentsWrapper";
 
 export const StyledSection = styled(motion.section)`
-	background: ${({ theme }) => theme.palette.bgSecondary};
-	position: relative;
 	margin-bottom: 4rem;
-
-	::before {
-		content: "";
-		height: 4rem;
-		background-color: ${({ theme }) => theme.palette.bgSecondary};
-		position: absolute;
-		top: 0;
-		left: 0;
-		transform: translateY(-99%);
-		width: 100%;
-		display: block;
-		clip-path: polygon(
-			100% 100%,
-			0% 100%,
-			0% 44.14%,
-			25% 87.59%,
-			50% 44.14%,
-			75% 0.69%,
-			100% 44.14%
-		);
-	}
-
-	::after {
-		content: "";
-		height: 4rem;
-		background-color: ${({ theme }) => theme.palette.bgSecondary};
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		display: block;
-		clip-path: polygon(
-			100% 0%,
-			0% 0%,
-			0% 31.62%,
-			33.33% 94.23%,
-			66.67% 11.89%,
-			100% 59.47%
-		);
-	}
 `;
 
-export const StyledAboutWrapper = styled(StyledContentsWrapper)`
+export const StyledAboutWrapper = styled(ContentsWrapper)`
 	display: flex;
 	flex-direction: column;
 `;
