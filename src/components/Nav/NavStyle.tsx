@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { BaseLink } from "../../styles/globalStyles";
 
-export const StyledMenu = styled.ul`
+export const StyledMenu = styled(motion.div)`
 	display: flex;
 	justify-content: end;
 	align-items: center;

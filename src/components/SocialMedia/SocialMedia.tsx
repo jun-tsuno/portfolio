@@ -10,9 +10,22 @@ const icons = [
 	<AiFillMail />,
 ];
 
+const container = {
+	hidden: {
+		opacity: 0,
+	},
+	show: { opacity: 1 },
+};
+
 const SocialMedia = () => {
 	return (
-		<StyledContainer>
+		<StyledContainer
+			as={motion.div}
+			variants={container}
+			initial="hidden"
+			animate="show"
+			transition={{ delay: 2.5, duration: 1 }}
+		>
 			{icons.map((icon, index) => {
 				return (
 					<StyledLink

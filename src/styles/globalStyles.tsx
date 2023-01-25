@@ -11,11 +11,11 @@ export const bp = {
 
 export const lightTheme = {
 	palette: {
-		bgPrimary: "#fff",
-		bgSecondary: "#f1f1f1",
+		bgPrimary: "#f5f4f4",
+		bgSecondary: "#caebf2",
 		bgMenu: "#0b2942",
 		textPrimary: "#24425b",
-		textSecondary: "#fff",
+		textSecondary: "#efefef",
 		paragraph: "#3d576d",
 		accent: "#f75c24",
 		marker: "rgba(244, 108, 59, 0.686)",
@@ -49,36 +49,33 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         background: ${({ theme }) => theme.palette.bgPrimary};
         color: ${({ theme }) => theme.palette.textPrimary};
-        scrollbar-gutter: stable both-edges;
-
-
     }
 
     h1 {
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
-        font-size: 1.8rem;
+        font-size: 2.3rem;
 
         @media ${bp.sm} {
-            font-size: 2.3rem;
+            font-size: 2.5rem;
         }
 
         @media ${bp.md} {
-            font-size: 2.5rem;
+            font-size: 3.6rem;
         }
     }
 
     h2 {
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
 
         @media ${bp.sm} {
-		font-size: 1.3rem;
+		font-size: 1.8rem;
 	}
 
         @media ${bp.md} {
-		font-size: 1.5rem;
+		font-size: 2.2rem;
 	}
     }
 
@@ -89,6 +86,7 @@ export const GlobalStyle = createGlobalStyle`
         display: inline-block;
         position: relative;
         padding-left: 1rem;
+        margin-top: 0;
         margin-bottom: 3rem;
 
 

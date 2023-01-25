@@ -1,20 +1,40 @@
-import React from "react";
-import AboutInfo from "../../components/Desctiptions/AboutInfo";
-import AboutText from "../../components/Desctiptions/AboutText";
+import AboutInfo from "../../components/Descriptions/AboutInfo";
+import AboutText from "../../components/Descriptions/AboutText";
 import {
 	StyledSection,
 	StyledSectionTitle,
 	StyledImage,
 	StyledTextWrapper,
-	StyledInfoWrapper,
 	StyledTextField,
-	StyledContents,
+	StyledAboutWrapper,
 } from "./AboutStyle";
+import { motion } from "framer-motion";
+
+const container = {
+	hidden: {
+		opacity: 0,
+		y: 50,
+	},
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.7,
+			delay: 0.5,
+		},
+	},
+};
 
 const About = () => {
 	return (
 		<StyledSection>
-			<StyledContents>
+			<StyledAboutWrapper
+				as={motion.div}
+				variants={container}
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+			>
 				<StyledSectionTitle>
 					<span>01.</span>ABOUT ME
 				</StyledSectionTitle>
@@ -27,7 +47,7 @@ const About = () => {
 						<AboutInfo />
 					</StyledTextWrapper>
 				</StyledTextField>
-			</StyledContents>
+			</StyledAboutWrapper>
 		</StyledSection>
 	);
 };

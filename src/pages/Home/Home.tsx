@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "../../components/Header/Header";
 import {
 	StyledHeader,
@@ -18,14 +17,14 @@ const container = {
 	show: {
 		opacity: 1,
 		transition: {
-			delayChildren: 0.5,
-			staggerChildren: 0.2,
+			delayChildren: 1.3,
+			staggerChildren: 0.25,
 		},
 	},
 };
 
 const item = {
-	hidden: { opacity: 0, y: 50 },
+	hidden: { opacity: 0, y: 60 },
 	show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 

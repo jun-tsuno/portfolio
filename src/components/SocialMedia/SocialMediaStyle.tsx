@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { BaseLink } from "../../styles/globalStyles";
 import { bp } from "../../styles/globalStyles";
+import { motion } from "framer-motion";
 
-export const StyledContainer = styled.div`
+export const StyledContainer = styled(motion.div)`
 	display: none;
 	z-index: 100;
 

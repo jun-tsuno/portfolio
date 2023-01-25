@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import ContentsWrapper, {
+	StyledContentsWrapper,
+} from "../../components/ContentsWrapper/ContentsWrapper";
 import { bp } from "../../styles/globalStyles";
+import { motion } from "framer-motion";
 
-export const StyledSection = styled.section`
+export const StyledSection = styled(motion.section)`
 	background: ${({ theme }) => theme.palette.bgSecondary};
 	position: relative;
+	margin-bottom: 4rem;
 
 	::before {
 		content: "";
@@ -38,17 +43,15 @@ export const StyledSection = styled.section`
 		clip-path: polygon(
 			100% 0%,
 			0% 0%,
-			0% 73.51%,
-			33.33% 6.4%,
-			66.67% 87.54%,
-			100% 46.06%
+			0% 31.62%,
+			33.33% 94.23%,
+			66.67% 11.89%,
+			100% 59.47%
 		);
 	}
 `;
 
-export const StyledContents = styled.div`
-	padding: 0 5%;
-	margin: 0 auto;
+export const StyledAboutWrapper = styled(StyledContentsWrapper)`
 	display: flex;
 	flex-direction: column;
 	max-width: 60rem;
@@ -75,7 +78,6 @@ export const StyledTextField = styled.div`
 
 export const StyledImage = styled.div`
 	width: 15rem;
-	z-index: 0;
 	position: relative;
 	align-self: center;
 
@@ -86,46 +88,27 @@ export const StyledImage = styled.div`
 	}
 
 	@media ${bp.lg} {
-		width: 24rem;
+		max-width: 18rem;
 	}
 
 	img {
 		object-fit: cover;
 		margin: 0 auto;
-		max-width: 100%;
+		display: block;
+		width: 100%;
 		height: 100%;
-		display: inline;
 		border-radius: 50%;
 		border: 0.5rem solid lightgray;
 	}
-
-	/* ::after {
-		content: "";
-		width: 14rem;
-		height: 14rem;
-		border: 2px solid ${({ theme }) => theme.palette.textPrimary};
-		border-radius: 5px;
-		background-color: ${({ theme }) => theme.palette.textPrimary};
-		z-index: -1;
-		position: absolute;
-		top: 1rem;
-		right: -1rem;
-		backface-visibility: hidden;
-
-		@media ${bp.md} {
-			width: 12rem;
-			height: 12rem;
-		}
-	} */
 `;
 
 export const StyledTextWrapper = styled.div`
-	width: 95%;
+	width: 90%;
+	max-width: 45rem;
 	margin: 0 auto;
 
 	@media ${bp.md} {
 		padding-left: 2.3rem;
-		padding-right: 2rem;
 	}
 `;
 
