@@ -11,8 +11,8 @@ export const bp = {
 
 export const lightTheme = {
 	palette: {
-		bgPrimary: "#f5f4f4",
-		bgSecondary: "#caebf2",
+		bgPrimary: "#efefef",
+		bgSecondary: "#efefef",
 		bgMenu: "#0b2942",
 		textPrimary: "#24425b",
 		textSecondary: "#efefef",
@@ -38,7 +38,8 @@ export const lightTheme = {
 
 export const GlobalStyle = createGlobalStyle`
     html {
-        font-family: 'League Spartan', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
         font-size: 1.2rem;
         overflow-y: overlay;
     }
@@ -68,14 +69,14 @@ export const GlobalStyle = createGlobalStyle`
     h2 {
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
 
         @media ${bp.sm} {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 
         @media ${bp.md} {
-		font-size: 2.2rem;
+		font-size: 1.5rem;
 	}
     }
 
@@ -99,7 +100,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h4 {
-        font-family: 'League Spartan', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
         font-size: 1rem;
         margin-top: 0;
         margin-bottom: 1rem;

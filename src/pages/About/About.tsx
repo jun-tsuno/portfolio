@@ -13,13 +13,13 @@ import { motion } from "framer-motion";
 const container = {
 	hidden: {
 		opacity: 0,
-		y: 50,
+		y: 60,
 	},
 	visible: {
 		opacity: 1,
 		y: 0,
 		transition: {
-			duration: 0.7,
+			duration: 1,
 			delay: 0.5,
 		},
 	},

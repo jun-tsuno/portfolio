@@ -3,7 +3,7 @@ import { bp } from "../../styles/globalStyles";
 import { motion } from "framer-motion";
 
 export const StyledHome = styled.div`
-	height: 95vh;
+	height: 100vh;
 	position: relative;
 `;
 
@@ -37,14 +37,14 @@ export const StyledName = styled(motion.h1)`
 	margin: 1rem 0;
 	span {
 		color: ${({ theme }) => theme.palette.accent};
-		font-size: 1.6rem;
+		font-size: 1.2rem;
 
 		@media ${bp.sm} {
-			font-size: 1.8rem;
+			font-size: 1.5rem;
 		}
 
 		@media ${bp.md} {
-			font-size: 1.8rem;
+			font-size: 1.5rem;
 		}
 	}
 

@@ -7,14 +7,11 @@ interface IProps {
 }
 
 export const StyledContentsWrapper = styled(motion.div)`
-	width: 90%;
+	width: 85%;
+	max-width: 70rem;
 	margin: 0 auto;
 	padding-top: 3rem;
 	padding-bottom: 2rem;
-
-	@media ${bp.lg} {
-		max-width: 70rem;
-	}
 `;
 
 const ContentsWrapper = ({ children }: IProps) => {

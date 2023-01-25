@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledContentsWrapper } from "../../components/ContentsWrapper/ContentsWrapper";
+import StyledContentsWrapper from "../../components/ContentsWrapper/ContentsWrapper";
 import { bp } from "../../styles/globalStyles";
 import { motion } from "framer-motion";
 
@@ -52,7 +52,6 @@ export const StyledSection = styled(motion.section)`
 export const StyledAboutWrapper = styled(StyledContentsWrapper)`
 	display: flex;
 	flex-direction: column;
-	max-width: 60rem;
 `;
 
 export const StyledSectionTitle = styled.h3`
@@ -63,7 +62,7 @@ export const StyledSectionTitle = styled.h3`
 		margin-right: 0.6rem;
 		color: ${({ theme }) => theme.palette.textSecondary};
 	}
-	justify-content: flex-start;
+	justify-content: center;
 `;
 
 export const StyledTextField = styled.div`
@@ -93,14 +92,14 @@ export const StyledImage = styled.div`
 	align-self: center;
 
 	@media ${bp.md} {
-		min-width: 12rem;
+		min-width: 14rem;
 		align-self: flex-start;
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 
 	@media ${bp.lg} {
 		min-width: 19rem;
-		padding-left: 1rem;
+		padding-left: 5rem;
 	}
 
 	img {

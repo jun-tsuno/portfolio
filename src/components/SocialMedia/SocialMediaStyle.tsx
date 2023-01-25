@@ -13,7 +13,7 @@ export const StyledContainer = styled(motion.div)`
 		align-items: center;
 		position: fixed;
 		top: 50%;
-		right: 5%;
+		right: 3%;
 		transform: translateY(-50%);
 		padding-left: 1rem;
 
