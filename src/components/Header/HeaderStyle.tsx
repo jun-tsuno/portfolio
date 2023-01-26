@@ -4,8 +4,7 @@ import { bp } from "../../styles/globalStyles";
 export const StyledHeader = styled.header`
 	display: flex;
 	align-items: center;
-	padding: 0 2rem;
-	margin: 0.5rem 0;
+	padding: 1rem 2rem;
 	justify-content: space-between;
 
 	@media ${bp.md} {

@@ -5,10 +5,10 @@ import {
 	StyledName,
 	StyledText,
 	StyledTransition,
-	StyledSwapContainer,
+	StyledTypeContainer,
 	StyledHome,
 } from "./HomeStyle";
-import TextSwap from "../../components/TextSwap/TextSwap";
+import TypeWriter from "../../components/TypeWriter/TypeWriter";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import { motion } from "framer-motion";
 
@@ -50,12 +50,10 @@ const Home = () => {
 					Based in Vancouver
 				</StyledText>
 				<StyledTransition as={motion.div} variants={item}>
-					<h1>
-						🙋‍♂️<span>=</span>
-					</h1>
-					<StyledSwapContainer>
-						<TextSwap />
-					</StyledSwapContainer>
+					<h1>=</h1>
+					<StyledTypeContainer>
+						<TypeWriter />
+					</StyledTypeContainer>
 				</StyledTransition>
 			</StyledHero>
 			<SocialMedia />

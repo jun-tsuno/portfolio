@@ -63,14 +63,11 @@ export const StyledText = styled(motion.h2)`
 `;
 
 export const StyledTransition = styled(motion.div)`
-	padding: 1.5rem 0;
+	padding: 1rem 0;
 
 	h1 {
-		margin: 1rem 0;
-	}
-
-	span {
-		padding: 0 1rem;
+		margin: 1rem;
+		margin-left: 0;
 	}
 
 	@media ${bp.sm} {
@@ -79,6 +76,7 @@ export const StyledTransition = styled(motion.div)`
 	}
 `;
 
-export const StyledSwapContainer = styled.h2`
+export const StyledTypeContainer = styled.h2`
 	margin: 0;
+	padding: 0;
 `;

@@ -22,7 +22,7 @@ const About = () => {
 						<AboutInfo />
 					</StyledTextWrapper>
 					<StyledImage>
-						<img src="/img/profile.png" alt="profile" />
+						<img src="/img/profile.jpg" alt="profile" />
 					</StyledImage>
 				</StyledTextField>
 			</StyledAboutWrapper>

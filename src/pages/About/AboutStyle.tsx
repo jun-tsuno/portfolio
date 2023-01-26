@@ -47,17 +47,20 @@ export const StyledInfoWrapper = styled.div`
 
 export const StyledImage = styled.div`
 	width: 15rem;
+	height: 15rem;
 	position: relative;
 	align-self: center;
 
 	@media ${bp.md} {
 		min-width: 14rem;
+		min-height: 14rem;
 		align-self: flex-start;
 		margin-top: 1rem;
 	}
 
 	@media ${bp.lg} {
 		min-width: 19rem;
+		min-height: 19rem;
 		padding-left: 5rem;
 	}
 
