@@ -3,6 +3,7 @@ import { GlobalStyle, lightTheme } from "./styles/globalStyles";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
+import Works from "./pages/Works/Works";
 
 const App = () => {
 	return (
@@ -11,6 +12,7 @@ const App = () => {
 			<Home />
 			<About />
 			<Skills />
+			<Works />
 		</ThemeProvider>
 	);
 };

@@ -1,10 +1,11 @@
-import { Link } from "../../types/types";
+import { Links } from "../../types/types";
 import { StyledMenu, StyledLink, StyledBtn } from "./NavStyle";
 import { motion } from "framer-motion";
 import { BaseButton } from "../Button/ButtonStyle";
+import { Link } from "react-scroll";
 
 interface IProps {
-	links: Link[];
+	links: Links[];
 }
 
 const container = {
@@ -33,17 +34,18 @@ const Nav = ({ links }: IProps) => {
 		>
 			{links.map(({ name, to, id }) => {
 				return (
-					<StyledLink
-						as={motion.a}
-						href={to}
-						key={id}
-						whileHover={{ scale: 1.2 }}
-						whileTap={{ scale: 0.9 }}
-						variants={item}
-						transition={{ type: "spring", stiffness: 400, damping: 17 }}
-					>
-						{name}
-					</StyledLink>
+					<Link to={to} smooth={true} offset={-70} duration={800} key={id}>
+						<StyledLink
+							as={motion.div}
+							key={id}
+							whileHover={{ scale: 1.2 }}
+							whileTap={{ scale: 0.9 }}
+							variants={item}
+							transition={{ type: "spring", stiffness: 400, damping: 17 }}
+						>
+							{name}
+						</StyledLink>
+					</Link>
 				);
 			})}
 			<StyledBtn as={motion.div} variants={item}>

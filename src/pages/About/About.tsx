@@ -1,7 +1,6 @@
 import AboutInfo from "../../components/Descriptions/AboutInfo";
 import AboutText from "../../components/Descriptions/AboutText";
 import {
-	StyledSection,
 	StyledSectionTitle,
 	StyledImage,
 	StyledTextWrapper,
@@ -11,7 +10,7 @@ import {
 
 const About = () => {
 	return (
-		<StyledSection>
+		<div id="about">
 			<StyledAboutWrapper>
 				<StyledSectionTitle>
 					<span>01.</span>ABOUT ME
@@ -26,7 +25,7 @@ const About = () => {
 					</StyledImage>
 				</StyledTextField>
 			</StyledAboutWrapper>
-		</StyledSection>
+		</div>
 	);
 };
 

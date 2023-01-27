@@ -5,6 +5,7 @@ export const StyledSkillBox = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	padding: 1rem 0;
 `;
 
 export const StyledCard = styled.div`

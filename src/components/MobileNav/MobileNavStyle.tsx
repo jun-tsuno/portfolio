@@ -10,7 +10,7 @@ export const StyledNav = styled(motion.nav)`
 	right: 0;
 `;
 
-export const StyledMenu = styled(motion.ul)`
+export const StyledMenu = styled(motion.div)`
 	margin: 5rem 0 0 0;
 	display: flex;
 	flex-direction: column;

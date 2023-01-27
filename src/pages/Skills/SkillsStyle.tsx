@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
-import ContentsWrapper from "../../components/ContentsWrapper/ContentsWrapper";
+import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 
-export const StyledSection = styled(motion.section)`
-	margin-bottom: 4rem;
+export const StyledComment = styled.p`
+	text-align: center;
+	padding: 1rem 0;
 `;
-
-export const StyledSkillsWrapper = styled(ContentsWrapper)``;

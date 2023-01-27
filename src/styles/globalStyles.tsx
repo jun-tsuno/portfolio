@@ -127,7 +127,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export const BaseLink = styled(motion.a)`
-	text-decoration: none;
+export const BaseLink = styled(motion.div)`
 	color: ${({ theme }) => theme.palette.textPrimary};
 `;

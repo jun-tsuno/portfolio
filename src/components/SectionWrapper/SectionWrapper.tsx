@@ -1,16 +1,20 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { bp } from "../../styles/globalStyles";
 
 interface IProps {
 	children: JSX.Element | JSX.Element[];
 }
 
-const StyledContentsWrapper = styled(motion.div)`
+const StyledContentsWrapper = styled(motion.section)`
 	width: 85%;
 	max-width: 70rem;
 	margin: 0 auto;
-	padding-top: 3rem;
-	padding-bottom: 2rem;
+	padding: 3rem 0;
+
+	@media ${bp.lg} {
+		padding: 4rem 0;
+	}
 `;
 
 const container = {
@@ -28,7 +32,7 @@ const container = {
 	},
 };
 
-const ContentsWrapper = ({ children }: IProps) => {
+const SectionWrapper = ({ children }: IProps) => {
 	return (
 		<StyledContentsWrapper
 			as={motion.div}
@@ -42,4 +46,4 @@ const ContentsWrapper = ({ children }: IProps) => {
 	);
 };
 
-export default ContentsWrapper;
+export default SectionWrapper;

@@ -1,14 +1,8 @@
 import styled from "styled-components";
-import StyledContentsWrapper from "../../components/ContentsWrapper/ContentsWrapper";
 import { bp } from "../../styles/globalStyles";
-import { motion } from "framer-motion";
-import ContentsWrapper from "../../components/ContentsWrapper/ContentsWrapper";
+import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 
-export const StyledSection = styled(motion.section)`
-	margin-bottom: 4rem;
-`;
-
-export const StyledAboutWrapper = styled(ContentsWrapper)`
+export const StyledAboutWrapper = styled(SectionWrapper)`
 	display: flex;
 	flex-direction: column;
 `;

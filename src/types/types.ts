@@ -15,8 +15,18 @@ declare module "styled-components" {
 	}
 }
 
-export interface Link {
+export interface Links {
 	name: string;
 	to: string;
 	id: number;
+}
+
+export interface WorksType {
+	id: string;
+	title: string;
+	image: string;
+	demoLink: string;
+	gitLink: string;
+	skillUsed: string[];
+	desc: string;
 }

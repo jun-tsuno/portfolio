@@ -9,12 +9,13 @@ import {
 	StyledNavBtn,
 	StyledLink,
 } from "./MobileNavStyle";
-import { Link } from "../../types/types";
+import { Links } from "../../types/types";
 import { useMediaQuery } from "react-responsive";
 import { bp } from "../../styles/globalStyles";
+import { Link } from "react-scroll";
 
 interface IProps {
-	links: Link[];
+	links: Links[];
 }
 
 const navAnimation = {
@@ -65,7 +66,7 @@ const MobileNav = ({ links }: IProps) => {
 						exit={{ width: 0, transition: { delay: 0.5, duration: 0.4 } }}
 					>
 						<StyledMenu
-							as={motion.ul}
+							as={motion.div}
 							initial="close"
 							animate="open"
 							exit="close"
@@ -85,9 +86,16 @@ const MobileNav = ({ links }: IProps) => {
 											damping: 17,
 										}}
 									>
-										<StyledLink href={to} as={motion.a}>
-											{name}
-										</StyledLink>
+										<Link
+											to={to}
+											smooth={true}
+											offset={-70}
+											duration={800}
+											key={id}
+											onClick={() => setOpen(false)}
+										>
+											<StyledLink as={motion.div}>{name}</StyledLink>
+										</Link>
 									</StyledContainer>
 								);
 							})}

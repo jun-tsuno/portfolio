@@ -1,18 +1,19 @@
+import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import SkillIcons from "../../components/SkillIcons/SkillIcons";
 import { StyledSectionTitle } from "../About/AboutStyle";
-import { StyledSection } from "./SkillsStyle";
-import { StyledSkillsWrapper } from "./SkillsStyle";
+import { StyledComment } from "./SkillsStyle";
 
 const Skills = () => {
 	return (
-		<StyledSection>
-			<StyledSkillsWrapper>
+		<div id="skills">
+			<SectionWrapper>
 				<StyledSectionTitle>
 					<span>02.</span> SKILLS
 				</StyledSectionTitle>
 				<SkillIcons />
-			</StyledSkillsWrapper>
-		</StyledSection>
+				<StyledComment>...AND LEARNING MORE!</StyledComment>
+			</SectionWrapper>
+		</div>
 	);
 };
 

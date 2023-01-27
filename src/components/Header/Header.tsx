@@ -10,10 +10,10 @@ import Nav from "../Nav/Nav";
 import { useMediaQuery } from "react-responsive";
 
 const links = [
-	{ name: "ABOUT", to: "#", id: 1 },
-	{ name: "SKILLS", to: "#", id: 2 },
-	{ name: "WORKS", to: "#", id: 3 },
-	{ name: "CONTACT", to: "#", id: 4 },
+	{ name: "ABOUT", to: "about", id: 1 },
+	{ name: "SKILLS", to: "skills", id: 2 },
+	{ name: "WORKS", to: "works", id: 3 },
+	{ name: "CONTACT", to: "contact", id: 4 },
 ];
 
 const Header = () => {
