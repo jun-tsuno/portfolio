@@ -4,12 +4,12 @@ declare module "styled-components" {
 	export interface DefaultTheme {
 		palette: {
 			bgPrimary: string;
-			bgSecondary: string;
 			bgMenu: string;
 			textPrimary: string;
 			textSecondary: string;
 			paragraph: string;
 			accent: string;
+			tintAccent: string;
 			strong: string;
 		};
 	}

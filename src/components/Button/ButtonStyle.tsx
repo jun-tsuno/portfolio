@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BaseButton = styled.button`
 	background-color: ${({ theme }) => theme.palette.accent};
 	border: 1px solid ${({ theme }) => theme.palette.accent};
-	color: ${({ theme }) => theme.palette.primary};
+	color: ${({ theme }) => theme.palette.textPrimary};
 	padding: 0.45rem 0.5rem 0.3rem 0.5rem;
 	width: 100%;
 	font-size: 1rem;
@@ -13,7 +13,8 @@ export const BaseButton = styled.button`
 `;
 
 export const SecondaryButton = styled(BaseButton)`
-	background-color: ${({ theme }) => theme.palette.secondary};
-	border: 1px solid ${({ theme }) => theme.palette.secondary};
-	color: ${({ theme }) => theme.palette.primary};
+	background-color: transparent;
+	border: 1px solid ${({ theme }) => theme.palette.accent};
+	color: ${({ theme }) => theme.palette.textSecondary};
+	font-size: 0.8rem;
 `;

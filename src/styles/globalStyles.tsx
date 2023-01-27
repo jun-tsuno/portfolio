@@ -12,13 +12,12 @@ export const bp = {
 export const lightTheme = {
 	palette: {
 		bgPrimary: "#efefef",
-		bgSecondary: "#efefef",
 		bgMenu: "#0b2942",
 		textPrimary: "#24425b",
 		textSecondary: "#efefef",
 		paragraph: "#3d576d",
 		accent: "#f75c24",
-		marker: "rgba(244, 108, 59, 0.686)",
+		tintAccent: "#f98d66",
 		strong: "#caebf2",
 	},
 };
