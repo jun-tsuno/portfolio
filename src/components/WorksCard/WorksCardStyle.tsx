@@ -1,15 +1,21 @@
 import styled from "styled-components";
+import { bp } from "../../styles/globalStyles";
 
 export const StyledCard = styled.div`
-	width: 95%;
-	max-width: 17rem;
+	display: flex;
+	flex-direction: column;
+	width: 16rem;
+	min-width: 16rem;
 	margin: 0 auto;
 	text-align: center;
-	filter: brightness(90%);
 
-	:hover {
-		animation: positionUp 0.3s forwards;
-		filter: brightness(100%);
+	@media ${bp.md} {
+		filter: brightness(85%);
+
+		:hover {
+			animation: positionUp 0.3s forwards;
+			filter: brightness(100%);
+		}
 	}
 
 	@keyframes positionUp {
@@ -39,9 +45,14 @@ export const StyledTextBox = styled.div`
 	border-radius: 0.5rem;
 	z-index: -1;
 	aspect-ratio: 1 / 1.1;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 
 	& p {
 		color: ${({ theme }) => theme.palette.textSecondary};
+		font-size: 0.9rem;
+		flex-grow: 1;
 	}
 `;
 
