@@ -17,4 +17,10 @@ export const SecondaryButton = styled(BaseButton)`
 	border: 1px solid ${({ theme }) => theme.palette.accent};
 	color: ${({ theme }) => theme.palette.textSecondary};
 	font-size: 0.8rem;
+	padding: 0.5rem;
+
+	:hover {
+		background-color: ${({ theme }) => theme.palette.tintAccent};
+		filter: brightness(90%);
+	}
 `;

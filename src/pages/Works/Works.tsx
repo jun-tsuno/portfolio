@@ -3,6 +3,7 @@ import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import WorksCard from "../../components/WorksCard/WorksCard";
 import { StyledSectionTitle } from "../About/AboutStyle";
 import { worksData } from "../../Data/worksData";
+import { StyledWorksList } from "./WorksStyle";
 
 const Works = () => {
 	return (
@@ -11,11 +12,11 @@ const Works = () => {
 				<StyledSectionTitle>
 					<span>03. </span>WORKS
 				</StyledSectionTitle>
-				<div>
+				<StyledWorksList>
 					{worksData.map((work) => {
 						return <WorksCard key={work.id} work={work} />;
 					})}
-				</div>
+				</StyledWorksList>
 			</SectionWrapper>
 		</div>
 	);

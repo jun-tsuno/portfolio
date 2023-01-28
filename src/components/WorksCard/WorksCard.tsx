@@ -5,7 +5,8 @@ import {
 	StyledTextBox,
 	StyledButtonBox,
 	StyledWorkTitle,
-} from "../../pages/Works/WorksStyle";
+	StyledSkills,
+} from "./WorksCardStyle";
 import { SecondaryButton } from "../Button/ButtonStyle";
 import { BiLinkExternal } from "react-icons/bi";
 
@@ -19,7 +20,9 @@ const WorksCard = ({ work }: IProps) => {
 		<>
 			<StyledCard>
 				<StyledImageBox>
-					<img src={image} alt="project-image" />
+					<a href={demoLink} target="_blank">
+						<img src={image} alt="project-image" />
+					</a>
 				</StyledImageBox>
 				<StyledTextBox>
 					<StyledWorkTitle>
@@ -31,7 +34,11 @@ const WorksCard = ({ work }: IProps) => {
 						</a>
 					</StyledWorkTitle>
 					<p>{desc}</p>
-					<p>{skillUsed}</p>
+					<StyledSkills>
+						{skillUsed.map((el, i) => {
+							return <li key={i}>{el}</li>;
+						})}
+					</StyledSkills>
 					<StyledButtonBox>
 						<SecondaryButton>SEE MORE</SecondaryButton>
 					</StyledButtonBox>
