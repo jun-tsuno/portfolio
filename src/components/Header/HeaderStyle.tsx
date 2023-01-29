@@ -8,7 +8,8 @@ export const StyledHeader = styled.header`
 	justify-content: space-between;
 
 	@media ${bp.md} {
-		padding-top: 1.2rem;
+		padding: 0.7rem 2rem;
+		background-color: #efefefc2;
 	}
 `;
 

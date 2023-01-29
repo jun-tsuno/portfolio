@@ -1,7 +1,7 @@
 import { BaseButton } from "./ButtonStyle";
 
 interface IProps {
-	children: string;
+	children: string | JSX.Element;
 }
 
 const Button = ({ children }: IProps) => {

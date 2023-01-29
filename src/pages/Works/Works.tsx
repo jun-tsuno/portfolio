@@ -1,4 +1,3 @@
-import React from "react";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import WorksCard from "../../components/WorksCard/WorksCard";
 import { StyledSectionTitle } from "../About/AboutStyle";

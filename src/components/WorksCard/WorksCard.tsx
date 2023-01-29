@@ -26,7 +26,7 @@ const WorksCard = ({ work }: IProps) => {
 				</StyledImageBox>
 				<StyledTextBox>
 					<StyledWorkTitle>
-						<a href={demoLink} target="black">
+						<a href={demoLink} target="_blank">
 							{title}
 							<span>
 								<BiLinkExternal />

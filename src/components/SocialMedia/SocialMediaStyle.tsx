@@ -31,4 +31,8 @@ export const StyledContainer = styled(motion.div)`
 export const StyledLink = styled(BaseLink)`
 	font-size: 1.3rem;
 	padding: 0.1rem;
+
+	& a {
+		color: ${({ theme }) => theme.palette.textPrimary};
+	}
 `;

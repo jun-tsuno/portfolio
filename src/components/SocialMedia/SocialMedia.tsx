@@ -4,10 +4,14 @@ import { StyledContainer, StyledLink } from "./SocialMediaStyle";
 import { motion } from "framer-motion";
 
 const icons = [
-	<AiFillGithub />,
-	<AiFillLinkedin />,
-	<BsMedium />,
-	<AiFillMail />,
+	{ id: 1, icon: <AiFillGithub />, to: "https://github.com/jun-tsuno" },
+	{
+		id: 2,
+		icon: <AiFillLinkedin />,
+		to: "https://www.linkedin.com/in/jun-tsunokawa-b22596247",
+	},
+	{ id: 3, icon: <BsMedium />, to: "https://medium.com/@jun55tsuno" },
+	{ id: 4, icon: <AiFillMail />, to: "mailto: jun55tsuno@gmail.com" },
 ];
 
 const container = {
@@ -26,11 +30,13 @@ const SocialMedia = () => {
 			animate="show"
 			transition={{ delay: 2.5, duration: 1 }}
 		>
-			{icons.map((icon, index) => {
+			{icons.map(({ id, icon, to }) => {
 				return (
 					<StyledLink
-						key={index}
+						key={id}
 						as={motion.a}
+						href={to}
+						target="_blank"
 						whileHover={{ scale: 1.2 }}
 						whileTap={{ scale: 0.9 }}
 						transition={{ type: "spring", stiffness: 400, damping: 17 }}
