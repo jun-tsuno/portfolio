@@ -10,11 +10,8 @@ export const StyledCard = styled.div`
 	text-align: center;
 
 	@media ${bp.md} {
-		filter: brightness(85%);
-
 		:hover {
 			animation: positionUp 0.3s forwards;
-			filter: brightness(100%);
 		}
 	}
 

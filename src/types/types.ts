@@ -29,4 +29,5 @@ export interface WorksType {
 	gitLink: string;
 	skillUsed: string[];
 	desc: string;
+	features: string[];
 }

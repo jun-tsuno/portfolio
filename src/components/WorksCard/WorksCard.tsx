@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { WorksType } from "../../types/types";
 import {
 	StyledCard,
@@ -10,15 +9,14 @@ import {
 } from "./WorksCardStyle";
 import { SecondaryButton } from "../Button/ButtonStyle";
 import { BiLinkExternal } from "react-icons/bi";
-import ModalPage from "../../pages/ModalPage/ModalPage";
+import { Link } from "react-router-dom";
 
 interface IProps {
 	work: WorksType;
 }
 
 const WorksCard = ({ work }: IProps) => {
-	const { title, image, demoLink, gitLink, skillUsed, desc } = work;
-	const [isOpen, setIsOpen] = useState<boolean>(false);
+	const { id, title, image, demoLink, gitLink, skillUsed, desc } = work;
 
 	return (
 		<>
@@ -43,13 +41,12 @@ const WorksCard = ({ work }: IProps) => {
 							return <li key={i}>{el}</li>;
 						})}
 					</StyledSkills>
-					<StyledButtonBox>
-						<SecondaryButton onClick={() => setIsOpen(true)}>
-							SEE MORE
-						</SecondaryButton>
-					</StyledButtonBox>
+					<Link to={`/work/${id}`}>
+						<StyledButtonBox>
+							<SecondaryButton>SEE MORE</SecondaryButton>
+						</StyledButtonBox>
+					</Link>
 				</StyledTextBox>
-				<ModalPage isOpen={isOpen} onClose={() => setIsOpen(false)} />
 			</StyledCard>
 		</>
 	);

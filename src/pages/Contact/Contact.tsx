@@ -31,7 +31,7 @@ const Contact = () => {
 					<span>04. </span>CONTACT
 				</StyledSectionTitle>
 				<StyledContactText>
-					<h4>I'm excited to have opportunities as a web developer.</h4>
+					<h4>I'm excited to have opportunities as a web developer!</h4>
 					<p>
 						Feel free to say Hi if you have any questions or just want to grab a
 						beer or coffee.

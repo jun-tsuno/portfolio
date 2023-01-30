@@ -18,7 +18,7 @@ export const lightTheme = {
 		paragraph: "#3d576d",
 		accent: "#f75c24",
 		tintAccent: "#f98d66",
-		strong: "#caebf2",
+		strong: "#b0e5f1",
 	},
 };
 
