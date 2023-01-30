@@ -30,4 +30,5 @@ export interface WorksType {
 	skillUsed: string[];
 	desc: string;
 	features: string[];
+	challenge?: string[];
 }

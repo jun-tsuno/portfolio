@@ -1,4 +1,5 @@
-import { Link, useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useParams, useLocation } from "react-router-dom";
 import { worksData } from "../../Data/worksData";
 import {
 	StyledContainer,
@@ -15,13 +16,27 @@ import { IoIosArrowBack } from "react-icons/io";
 
 const WorkDetail = () => {
 	const { workId } = useParams();
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
 
 	const selectedData = worksData.filter((work) => {
 		return work.id === workId;
 	});
 
-	const { id, title, image, demoLink, gitLink, skillUsed, desc, features } =
-		selectedData[0];
+	const {
+		id,
+		title,
+		image,
+		demoLink,
+		gitLink,
+		skillUsed,
+		desc,
+		features,
+		challenge,
+	} = selectedData[0];
 
 	return (
 		<>
@@ -72,7 +87,9 @@ const WorkDetail = () => {
 					</section>
 					<section>
 						<h2>Challenging Part</h2>
-						<p></p>
+						{challenge?.map((ele, i) => {
+							return <p key={i}>{ele}</p>;
+						})}
 					</section>
 				</StyledTextBox>
 			</StyledContainer>

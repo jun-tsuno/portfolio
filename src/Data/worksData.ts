@@ -17,9 +17,13 @@ export const worksData: WorksType[] = [
 		],
 		desc: `This portfolio page. Styled with styled-components, not relying on CSS frameworks.`,
 		features: [
-			"Because the portfolio site does not have many complex features, I felt it would be good practise to utilise TypeScript and see how it performs in React.",
+			"Because the portfolio site does not have many complex features, I felt it would be good practise to utilise TypeScript for the type safety.",
 			"I split modules and layouts into components as much as possible to make maintenance easier.",
-			"Fully responsive design, and simple UI",
+			"Fully responsive design, and simple UI. Dynamically change the content using framer motion animation.",
+		],
+		challenge: [
+			"The most difficult aspect for me was maintaining consistency and making components reusable. All header tags or buttons should share the same fundamental structure and behave the same in responsive layout, yet it's inefficient to format each time I add a component. So, in the globalStyles file, I declare the font size, color, and other basic styling of each tag. This allows me to write code faster as I go.",
+			"I was also concerned about the structure of the styled-component file. It is simpler to see the structure of each component when the style and JS are separated.",
 		],
 	},
 	{
@@ -36,6 +40,10 @@ export const worksData: WorksType[] = [
 			"You may see and add your favourite videos to the favourites list. You may also remove videos from your favourites list by clicking the icon.",
 			"The navigation bar remains on the screen at all times, and only the pages are replaced.",
 		],
+		challenge: [
+			"At first, I struggled with selecting 'how to construct the store' of this app. When a user selects a video, the information about the video is provided to the Modal, however the props drilling makes the code tough to follow. Also, the favourite videos' information is used across the pages, which led me to use 'Redux' to store 'video' related data in a central location.",
+			"In terms of layout, I learned how to use ReactRouter to share the 'navigation bar' across all pages. I read documentation and other blog posts carefully and made it.",
+		],
 	},
 	{
 		id: "todoList",
@@ -50,6 +58,10 @@ export const worksData: WorksType[] = [
 			"It supports e-mail and password authentication, and you can create a new user if you don't already have one.",
 			"The To Do list includes CRUD functionality, and the data that users enter is dynamically stored and updated in the Firebase database that is associated with each user.",
 			"Light & Dark mode",
+		],
+		challenge: [
+			"This is my first project with Firebase, and it was tough to understand how the Firebase storage stores data and how to retrieve the data form components at first. I gained a basic understanding of how to connect a database with CRUD functionality, as well as how to handle asynchronous data fetching.",
+			"By adding 'Dark Mode' in this app, I also learned how to override the MaterialUI default styling. It strengthens my understanding of the usage and customization of the UI components.",
 		],
 	},
 	{
