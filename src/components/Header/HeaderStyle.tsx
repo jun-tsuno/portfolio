@@ -23,7 +23,16 @@ export const RightSection = styled.div`
 
 export const StyledLogo = styled.div`
 	z-index: 100;
-	color: orange;
+	width: 3rem;
+
+	& img {
+		width: 100%;
+	}
+
+	:hover {
+		cursor: pointer;
+		transform: scale(1.2);
+	}
 
 	@media ${bp.md} {
 		flex: 20%;

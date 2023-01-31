@@ -13,7 +13,7 @@ export const StyledSectionTitle = styled.h3`
 		border-radius: 50%;
 		padding: 0.35rem;
 		margin-right: 0.6rem;
-		color: ${({ theme }) => theme.palette.textSecondary};
+		color: ${({ theme }) => theme.palette.bgPrimary};
 	}
 	justify-content: center;
 `;

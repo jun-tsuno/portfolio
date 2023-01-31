@@ -8,6 +8,7 @@ import { bp } from "../../styles/globalStyles";
 import MobileNav from "../MobileNav/MobileNav";
 import Nav from "../Nav/Nav";
 import { useMediaQuery } from "react-responsive";
+import { animateScroll } from "react-scroll";
 
 const links = [
 	{ name: "ABOUT", to: "about", id: 1 },
@@ -22,7 +23,9 @@ const Header = () => {
 	return (
 		<StyledHeader>
 			<LeftSection>
-				<StyledLogo>LOGO</StyledLogo>
+				<StyledLogo onClick={() => animateScroll.scrollToTop()}>
+					<img src="/public/img/logo.png" alt="logo" />
+				</StyledLogo>
 			</LeftSection>
 			<RightSection>
 				{isMedium ? <Nav links={links} /> : <MobileNav links={links} />}

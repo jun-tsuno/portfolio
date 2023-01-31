@@ -14,9 +14,8 @@ export const lightTheme = {
 		bgPrimary: "#efefef",
 		bgMenu: "#0b2942",
 		textPrimary: "#24425b",
-		textSecondary: "#efefef",
+		textSecondary: "#d7d7d7",
 		paragraph: "#3d576d",
-		tintParagraph: "#d7d7d7",
 		accent: "#f75c24",
 		tintAccent: "#f98d66",
 		strong: "#b0e5f1",
@@ -96,7 +95,6 @@ export const GlobalStyle = createGlobalStyle`
             width: 3rem;
             margin-left: 1rem;
         }
-
     }
 
     h4 {

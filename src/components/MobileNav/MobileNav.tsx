@@ -100,7 +100,7 @@ const MobileNav = ({ links }: IProps) => {
 								);
 							})}
 							<StyledContainer
-								as={motion.li}
+								as={motion.div}
 								whileHover={{ scale: 1.3 }}
 								variants={listVariants}
 							>
