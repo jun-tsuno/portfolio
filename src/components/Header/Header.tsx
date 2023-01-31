@@ -24,7 +24,7 @@ const Header = () => {
 		<StyledHeader>
 			<LeftSection>
 				<StyledLogo onClick={() => animateScroll.scrollToTop()}>
-					<img src="/public/img/logo.png" alt="logo" />
+					<img src="/img/logo.png" alt="logo" />
 				</StyledLogo>
 			</LeftSection>
 			<RightSection>
