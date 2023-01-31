@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledContainer = styled.div`
 	background: ${({ theme }) => theme.palette.bgMenu};
-	color: ${({ theme }) => theme.palette.textSecondary};
+	color: ${({ theme }) => theme.palette.tintParagraph};
 	height: 100%;
 	padding: 2rem 0;
 	line-height: 1.8rem;
@@ -25,8 +25,9 @@ export const StyledContainer = styled.div`
 	}
 
 	& p {
-		color: ${({ theme }) => theme.palette.textSecondary};
+		color: ${({ theme }) => theme.palette.tintParagraph};
 		font-size: 1.1rem;
+		line-height: 1.8rem;
 	}
 `;
 
@@ -37,7 +38,7 @@ export const StyledBack = styled.div`
 	font-size: 2rem;
 
 	& a {
-		color: ${({ theme }) => theme.palette.textSecondary};
+		color: ${({ theme }) => theme.palette.tintParagraph};
 		display: inline-block;
 		:hover {
 			cursor: pointer;
@@ -65,7 +66,7 @@ export const StyledTop = styled.div`
 	}
 
 	& a {
-		color: ${({ theme }) => theme.palette.textSecondary};
+		color: ${({ theme }) => theme.palette.tintParagraph};
 		font-size: 1.8rem;
 		padding: 0 1rem;
 		display: inline-block;
@@ -110,7 +111,7 @@ export const StyledTextBox = styled.div`
 	padding-top: 2.5rem;
 
 	& section {
-		padding-bottom: 2rem;
+		padding-bottom: 3rem;
 	}
 
 	& ul {

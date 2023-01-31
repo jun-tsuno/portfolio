@@ -50,7 +50,7 @@ export const worksData: WorksType[] = [
 		title: "To-Do List with Database",
 		image:
 			"https://user-images.githubusercontent.com/110567844/215232206-3595eb8f-c61e-488d-b3bb-ef496c7ca4e6.png",
-		demoLink: "",
+		demoLink: "https://ts-todolist-r4rmdj09b-jun-tsuno.vercel.app",
 		gitLink: "https://github.com/jun-tsuno/ts_todolist.git",
 		skillUsed: ["React", "TypeScript", "Firebase", "tailwind", "MUI"],
 		desc: `CRUD to-do list which has e-mail and password authentication. Input data is stored in Firebase database.`,
@@ -77,6 +77,10 @@ export const worksData: WorksType[] = [
 			"Multiple API calls are made so that the amount of data fetched in a single call is not too large.",
 			"The character can be filtered by name, and the output is dynamically rendered on the page.",
 		],
+		challenge: [
+			"Because the api answer contains a large quantity of data, it was difficult to think of ways to limit the network request and lower the amount of data at a single request. To avoid this, I create a request in each page as it is rendered, and then the following request is sent when the user clicks each character.",
+			"This project is a simple but useful example of how to manage multiple API requests in an SPA application.",
+		],
 	},
 	{
 		id: "landing-page",
@@ -89,7 +93,11 @@ export const worksData: WorksType[] = [
 		desc: `Landing page for an Imaginary outdoor gear company. I took care of Sass folder structure.`,
 		features: [
 			"The layout is fully responsive. I took care of the hover effect so that the user could see the same content on desktop and mobile.",
-			"Utilized JavaScript observer API, so that CSS animations are occared in specific timing.",
+			"Utilized JavaScript observer API, so that CSS animations are occurred in specific timing.",
+		],
+		challenge: [
+			"I had never done a large Sass project before, therefore I had no idea how to arrange the Sass folder properly. I did some study and settled on the modern Sass file structure, 7-1 pattern structure. ",
+			"This teaches me that following best practice makes coding cleaner and easier to maintain.",
 		],
 	},
 ];

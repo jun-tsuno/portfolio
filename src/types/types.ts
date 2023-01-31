@@ -8,6 +8,7 @@ declare module "styled-components" {
 			textPrimary: string;
 			textSecondary: string;
 			paragraph: string;
+			tintParagraph: string;
 			accent: string;
 			tintAccent: string;
 			strong: string;

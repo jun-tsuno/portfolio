@@ -16,6 +16,7 @@ export const lightTheme = {
 		textPrimary: "#24425b",
 		textSecondary: "#efefef",
 		paragraph: "#3d576d",
+		tintParagraph: "#d7d7d7",
 		accent: "#f75c24",
 		tintAccent: "#f98d66",
 		strong: "#b0e5f1",
