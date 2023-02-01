@@ -1,6 +1,4 @@
-# Project Title
-
-My Portfolio Site
+# My Portfolio Site
 
 <p>
 <img width="400" alt="Screenshot 2023-01-31 at 9 50 59 PM" src="https://user-images.githubusercontent.com/110567844/215962676-afbbdbd6-144d-4849-a7ed-953cce92da83.png">
