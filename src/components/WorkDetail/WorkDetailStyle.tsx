@@ -36,15 +36,12 @@ export const StyledBack = styled.div`
 	top: 4%;
 	left: 10%;
 	font-size: 2rem;
-
-	& a {
-		color: ${({ theme }) => theme.palette.textSecondary};
-		display: inline-block;
-		:hover {
-			cursor: pointer;
-			color: ${({ theme }) => theme.palette.tintAccent};
-			transform: scale(1.5);
-		}
+	color: ${({ theme }) => theme.palette.textSecondary};
+	display: inline-block;
+	:hover {
+		cursor: pointer;
+		color: ${({ theme }) => theme.palette.tintAccent};
+		transform: scale(1.2);
 	}
 `;
 

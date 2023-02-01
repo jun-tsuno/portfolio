@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useParams, useLocation, useNavigate } from "react-router-dom";
 import { worksData } from "../../Data/worksData";
 import {
 	StyledContainer,
@@ -17,6 +17,7 @@ import { IoIosArrowBack } from "react-icons/io";
 const WorkDetail = () => {
 	const { workId } = useParams();
 	const { pathname } = useLocation();
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -25,6 +26,10 @@ const WorkDetail = () => {
 	const selectedData = worksData.filter((work) => {
 		return work.id === workId;
 	});
+
+	const handleClick = () => {
+		navigate(-1);
+	};
 
 	const {
 		id,
@@ -42,9 +47,9 @@ const WorkDetail = () => {
 		<>
 			<StyledContainer>
 				<StyledBack>
-					<Link to={"/"}>
+					<StyledBack onClick={handleClick}>
 						<IoIosArrowBack />
-					</Link>
+					</StyledBack>
 				</StyledBack>
 				<StyledTop>
 					<h2>{title}</h2>

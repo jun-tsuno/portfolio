@@ -26,6 +26,7 @@ export const StyledImageBox = styled.div`
 	width: 90%;
 	margin: 0 auto;
 	margin-bottom: -1.5rem;
+	z-index: 1;
 
 	& img {
 		width: 100%;
@@ -40,7 +41,7 @@ export const StyledTextBox = styled.div`
 	padding: 0 1rem;
 	padding-top: 8%;
 	border-radius: 0.5rem;
-	z-index: -1;
+	z-index: 0;
 	aspect-ratio: 1 / 1.1;
 	display: flex;
 	flex-direction: column;

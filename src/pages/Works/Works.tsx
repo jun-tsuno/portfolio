@@ -3,7 +3,6 @@ import WorksCard from "../../components/WorksCard/WorksCard";
 import { StyledSectionTitle } from "../About/AboutStyle";
 import { worksData } from "../../Data/worksData";
 import { StyledWorksList } from "./WorksStyle";
-import { ScrollRestoration } from "react-router-dom";
 
 const Works = () => {
 	return (
@@ -18,11 +17,6 @@ const Works = () => {
 					})}
 				</StyledWorksList>
 			</SectionWrapper>
-			{/* <ScrollRestoration
-				getKey={(location, matches) => {
-					return location.pathname;
-				}}
-			/> */}
 		</div>
 	);
 };

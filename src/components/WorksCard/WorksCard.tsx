@@ -41,11 +41,11 @@ const WorksCard = ({ work }: IProps) => {
 							return <li key={i}>{el}</li>;
 						})}
 					</StyledSkills>
-					<Link to={`/work/${id}`}>
-						<StyledButtonBox>
+					<StyledButtonBox>
+						<Link to={`/work/${id}`}>
 							<SecondaryButton>SEE MORE</SecondaryButton>
-						</StyledButtonBox>
-					</Link>
+						</Link>
+					</StyledButtonBox>
 				</StyledTextBox>
 			</StyledCard>
 		</>
