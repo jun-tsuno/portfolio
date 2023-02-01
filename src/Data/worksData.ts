@@ -71,7 +71,7 @@ export const worksData: WorksType[] = [
 			"https://user-images.githubusercontent.com/110567844/215287130-db982e49-3a6c-4489-91ca-71a5a990f98e.png",
 		demoLink: "https://shimmering-panda-91d15b.netlify.app/",
 		gitLink: "https://github.com/jun-tsuno/pokemon.git",
-		skillUsed: ["React", "RTKQuery", "ReactRouter", "tailwind"],
+		skillUsed: ["React", "RTKQuery", "tailwind"],
 		desc: `To avoid fetching a large amount of data at once, the API will be called each time the user clicks a character.`,
 		features: [
 			"Multiple API calls are made so that the amount of data fetched in a single call is not too large.",
