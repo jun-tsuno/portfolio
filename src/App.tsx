@@ -6,12 +6,7 @@ import Skills from "./pages/Skills/Skills";
 import Works from "./pages/Works/Works";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import {
-	BrowserRouter,
-	Routes,
-	Route,
-	ScrollRestoration,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WorkDetail from "./components/WorkDetail/WorkDetail";
 
 const App = () => {

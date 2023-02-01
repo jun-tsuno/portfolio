@@ -16,7 +16,7 @@ interface IProps {
 }
 
 const WorksCard = ({ work }: IProps) => {
-	const { id, title, image, demoLink, gitLink, skillUsed, desc } = work;
+	const { id, title, image, demoLink, skillUsed, desc } = work;
 
 	return (
 		<>

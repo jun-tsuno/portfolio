@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledInfo } from "./AboutInfoStyle";
 
 const AboutInfo = () => {

@@ -22,19 +22,6 @@ export const lightTheme = {
 	},
 };
 
-// export const lightTheme = {
-// 	palette: {
-// 		bgPrimary: "#091322",
-// 		bgSecondary: "#282828",
-// 		bgMenu: "#0c2d49",
-// 		textPrimary: "#d5d5d5",
-// 		textSecondary: "#fff",
-// 		paragraph: "#beafa4",
-// 		accent: "#F97D50",
-// 		strong: "#4c9fb2",
-// 	},
-// };
-
 export const GlobalStyle = createGlobalStyle`
     html {
         font-family: 'Roboto Condensed', sans-serif;

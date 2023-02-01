@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, useParams, useLocation, useNavigate } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { worksData } from "../../Data/worksData";
 import {
 	StyledContainer,
@@ -32,7 +32,6 @@ const WorkDetail = () => {
 	};
 
 	const {
-		id,
 		title,
 		image,
 		demoLink,

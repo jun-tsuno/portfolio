@@ -5,7 +5,7 @@ const TypeWriter = () => {
 		words: [
 			"<OPEN TO NEW/>",
 			"<WORLD TRAVELER/>",
-			"<HARD WORKING/>",
+			"<HARD WORKER/>",
 			"<MOVIE FAN/>",
 		],
 		loop: false,

@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledTextBox } from "./AboutTextStyle";
 
 const AboutText = () => {
