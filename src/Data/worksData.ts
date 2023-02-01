@@ -6,7 +6,7 @@ export const worksData: WorksType[] = [
 		title: "Portfolio Page",
 		image:
 			"https://user-images.githubusercontent.com/110567844/215290656-1c333f54-9c9e-415b-8396-a29dc476ef1b.png",
-		demoLink: "",
+		demoLink: "https://jun-tsunokawa-portfolio.vercel.app/",
 		gitLink: "https://github.com/jun-tsuno/portfolio.git",
 		skillUsed: [
 			"React",
