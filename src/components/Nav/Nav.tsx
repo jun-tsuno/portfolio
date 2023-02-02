@@ -50,7 +50,9 @@ const Nav = ({ links }: IProps) => {
 			})}
 			<StyledBtn as={motion.div} variants={item}>
 				<BaseButton as={motion.div} whileHover={{ scale: 1.3 }}>
-					RESUME
+					<a href="/img/resume.pdf" target="_blank">
+						RESUME
+					</a>
 				</BaseButton>
 			</StyledBtn>
 		</StyledMenu>

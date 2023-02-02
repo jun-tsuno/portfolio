@@ -31,6 +31,10 @@ export const StyledContainer = styled(motion.div)`
 export const StyledNavBtn = styled.div`
 	padding-top: 1.5rem;
 	width: 6rem;
+
+	& a {
+		color: ${({ theme }) => theme.palette.textPrimary};
+	}
 `;
 
 export const StyledLink = styled(BaseLink)`

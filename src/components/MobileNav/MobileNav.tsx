@@ -105,7 +105,11 @@ const MobileNav = ({ links }: IProps) => {
 								variants={listVariants}
 							>
 								<StyledNavBtn>
-									<BaseButton>RESUME</BaseButton>
+									<BaseButton>
+										<a href="/img/resume.pdf" target="_blank">
+											RESUME
+										</a>
+									</BaseButton>
 								</StyledNavBtn>
 							</StyledContainer>
 						</StyledMenu>

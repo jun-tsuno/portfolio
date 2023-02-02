@@ -12,7 +12,7 @@ import { BsMedium } from "react-icons/bs";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 const icons = [
-	{ id: 1, icon: <IoDocumentTextOutline />, to: "" },
+	{ id: 1, icon: <IoDocumentTextOutline />, to: "/img/resume.pdf" },
 	{ id: 2, icon: <AiFillGithub />, to: "https://github.com/jun-tsuno" },
 	{
 		id: 3,

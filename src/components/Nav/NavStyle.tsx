@@ -16,4 +16,9 @@ export const StyledLink = styled(BaseLink)`
 export const StyledBtn = styled(motion.div)`
 	width: 4rem;
 	padding: 0 0.8rem;
+
+	& a {
+		text-decoration: none;
+		color: ${({ theme }) => theme.palette.textPrimary};
+	}
 `;
