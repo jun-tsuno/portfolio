@@ -19,7 +19,7 @@ const AboutText = () => {
 			<br />
 			<p>
 				Specialized in <strong>JavaScript </strong>
-				including JS frameworks such as React and Redux, as well as working on
+				including JS frameworks such as React and NextJS, as well as working on
 				other libraries and tools.
 			</p>
 		</StyledTextBox>
