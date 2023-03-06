@@ -38,7 +38,7 @@ export const StyledImageBox = styled.div`
 
 export const StyledTextBox = styled.div`
 	background-color: ${({ theme }) => theme.palette.bgMenu};
-	padding: 0 1rem;
+	padding: 0 0.5rem;
 	padding-top: 8%;
 	border-radius: 0.5rem;
 	z-index: 0;
@@ -46,6 +46,11 @@ export const StyledTextBox = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+
+	@media ${bp.sm} {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
 
 	& p {
 		color: ${({ theme }) => theme.palette.textSecondary};
