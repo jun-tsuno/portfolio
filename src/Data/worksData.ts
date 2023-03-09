@@ -2,10 +2,28 @@ import { WorksType } from "../types/types";
 
 export const worksData: WorksType[] = [
 	{
+		id: "rentManager",
+		title: "Property Manager",
+		image: "https://user-images.githubusercontent.com/110567844/223959162-12e54290-178c-4109-bc1e-dae4a49ed5d4.png",
+		demoLink: "https://rent-property-manager.vercel.app/",
+		gitLink: "https://github.com/jun-tsuno/rent_manager.git",
+		skillUsed: ["Nextjs", "TypeScript", "Firebase", "tailwind", "MUI"],
+		desc: `Property management app for house owners. Upload houses, tenants and check the current payment status.`,
+		features: [
+			"E-mail/Password authentication. Each account has each storage.",
+			"Add/delete properties and tenants. Memo some information about tenants.",
+			"Update tenant's monthly payment history, automatically reset on the start of each month.",
+		],
+		challenge: [
+			"Because the database contains numerous collections, it was a bit hard to figure out which endpoint to use.I made a basic diagram to keep track of the database structure visually.",
+			"To make the app run quickly, I needed to use server-component and client-component strategically, which is a new feature in Next.js.",
+			"I discovered when and how Next.js renders those components. This was an excellent lesson for understanding the overall structure of a web application.",
+		],
+	},
+	{
 		id: "portfolio",
 		title: "Portfolio Page",
-		image:
-			"https://user-images.githubusercontent.com/110567844/215290656-1c333f54-9c9e-415b-8396-a29dc476ef1b.png",
+		image: "https://user-images.githubusercontent.com/110567844/215290656-1c333f54-9c9e-415b-8396-a29dc476ef1b.png",
 		demoLink: "https://jun-tsunokawa-portfolio.vercel.app/",
 		gitLink: "https://github.com/jun-tsuno/portfolio.git",
 		skillUsed: [
@@ -29,8 +47,7 @@ export const worksData: WorksType[] = [
 	{
 		id: "youtube",
 		title: "Where's Next Tube",
-		image:
-			"https://user-images.githubusercontent.com/110567844/215029060-50d61049-82f7-438f-b7aa-ba1fe834a016.png",
+		image: "https://user-images.githubusercontent.com/110567844/215029060-50d61049-82f7-438f-b7aa-ba1fe834a016.png",
 		demoLink: "https://wheres-next-tube.vercel.app/",
 		gitLink: "https://github.com/jun-tsuno/WheresNextTube.git",
 		skillUsed: ["React", "RTKQuery", "tailwind", "chakraUI"],
@@ -48,8 +65,7 @@ export const worksData: WorksType[] = [
 	{
 		id: "todoList",
 		title: "To-Do List with Database",
-		image:
-			"https://user-images.githubusercontent.com/110567844/215232206-3595eb8f-c61e-488d-b3bb-ef496c7ca4e6.png",
+		image: "https://user-images.githubusercontent.com/110567844/215232206-3595eb8f-c61e-488d-b3bb-ef496c7ca4e6.png",
 		demoLink: "https://ts-todolist-r4rmdj09b-jun-tsuno.vercel.app",
 		gitLink: "https://github.com/jun-tsuno/ts_todolist.git",
 		skillUsed: ["React", "TypeScript", "Firebase", "tailwind", "MUI"],
@@ -67,8 +83,7 @@ export const worksData: WorksType[] = [
 	{
 		id: "pokemon",
 		title: "Multiple API Calling with PokeAPI ",
-		image:
-			"https://user-images.githubusercontent.com/110567844/215287130-db982e49-3a6c-4489-91ca-71a5a990f98e.png",
+		image: "https://user-images.githubusercontent.com/110567844/215287130-db982e49-3a6c-4489-91ca-71a5a990f98e.png",
 		demoLink: "https://shimmering-panda-91d15b.netlify.app/",
 		gitLink: "https://github.com/jun-tsuno/pokemon.git",
 		skillUsed: ["React", "RTKQuery", "ReactRouter", "tailwind"],
@@ -85,8 +100,7 @@ export const worksData: WorksType[] = [
 	{
 		id: "landing-page",
 		title: "Company Landing Page",
-		image:
-			"https://user-images.githubusercontent.com/110567844/215289770-75f9a20c-4b93-4d06-be8d-2613018bc499.png",
+		image: "https://user-images.githubusercontent.com/110567844/215289770-75f9a20c-4b93-4d06-be8d-2613018bc499.png",
 		demoLink: "https://geekgearoutdoor-landing-page.netlify.app",
 		gitLink: "https://github.com/jun-tsuno/landing_page.git",
 		skillUsed: ["HTML", "JavaScript", "Sass"],
